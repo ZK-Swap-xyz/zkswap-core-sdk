@@ -24,6 +24,7 @@ export enum ChainId {
   OPTIMISM = 10,
   ETHW = 10001,
   ZKSYNCTESTNET = 280,
+  ZKSYNC = 324,
 }
 
 export const WETH = {
@@ -143,6 +144,13 @@ export const WETH = {
   [ChainId.ZKSYNCTESTNET]: new Token(
       ChainId.ZKSYNCTESTNET,
       '0x33F1FBe337A19BebCa41a3DCbA896752729286Ea',
+      18,
+      'WETH',
+      'Wrapped ETH'
+  ),
+  [ChainId.ZKSYNC]: new Token(
+      ChainId.ZKSYNC,
+      '0x5aea5775959fbc2557cc8789bc1bf90a239d9a91',
       18,
       'WETH',
       'Wrapped ETH'
